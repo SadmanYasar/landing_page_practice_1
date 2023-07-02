@@ -8,17 +8,18 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from "@heroicons/react/24/outline"
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="fixed z-20 w-full bg-transparent">
-            <nav className="flex items-center justify-between p-6 mx-auto opacity-50 max-w-7xl lg:px-8" aria-label="Global">
+        <motion.header className="fixed w-full bg-transparent">
+            <nav className="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img className="w-auto h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                        <img className="w-auto h-16" src="https://img.icons8.com/?size=512&id=81028&format=png" alt="" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -118,6 +119,6 @@ export default function Navbar() {
                     </div>
                 </Dialog.Panel>
             </Dialog>
-        </header>
+        </motion.header>
     )
 }

@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Pirata_One } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Pirata_One({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata = {
   title: 'Landing Page Practice 1',

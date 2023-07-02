@@ -3,7 +3,7 @@
 
 export default function Hero() {
     return (
-        <div className="min-h-screen hero" style={{backgroundImage: "url(ship_bg.jpg)"}}>
+        <div className="min-h-screen hero bg-gradient-to-b from-transparent to-primary-black mix-blend-overlay" style={{backgroundImage: "url('ship_bg.jpg')"}} >
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="text-center hero-content text-neutral-content">
                 <div className="max-w-md">
